@@ -1,0 +1,296 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(images/banner.png);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 150px;
+}
+.nav-links{
+	flex: 1;
+	padding-right: 250px;
+	text-align: center;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #3388FF;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 62px;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 14px;
+	color: #fff;
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 1px solid #006aff;
+	background: #006aff;
+	transition: 1s;
+}
+nav .fa{
+	display: none;
+}
+
+/*--Inttro--*/
+
+.intro{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+
+p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+/*--Involved Technology--*/
+
+.involvedtech{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+
+p{
+	color: rgb(0, 0, 0);
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.tech-col{
+	flex-basis: 19%;
+	background: #f76161;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.tech-col:hover{
+	box-shadow: 0 0 10px 6px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+	.row{
+		flex-direction: column;
+	}
+}
+.diftech{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+.dif-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.dif-col:hover{
+	box-shadow: 0 0 10px 6px rgba(0,0,0,0.2);
+}
+.dif-col img{
+	width: 100%;
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layer:hover{
+	background: rgba(226,0,0,0.7);
+}
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1;
+}
+
+.whoisameca img 
+{
+	transform: translate(600px, 100px);
+}
+
+.ameca img 
+{
+	transform: translate(450px, 70px);
+}
+
+.ameca{
+	transform: translate(0px, 100px);
+	min-height: 110vh;
+	width: 100%;
+	background-color: rgb(34, 34, 34);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.ameca h3{
+	font-size: 30px; 
+	text-align:"right" ;
+	padding-top: 110px;
+}
+.ameca p{
+	color: white;
+	margin: 10px 0 40px;
+	font-size: 20px;
+	padding: 20px;	
+}
+.ameca h1{
+	color: white;
+	font-size: 15px; 
+	text-align:"right";
+	padding-top: 110px;
+}
+.ameca ul{
+	color: white;
+	transform: translate(0px, 30px);
+}
+
+.whoisameca{
+	min-height: 100vh;
+	width: 100%;
+	background-color: rgb(243, 243, 243);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.whoisameca h3{
+	font-size: 30px; 
+	text-align:"right" ;
+	padding-top: 110px;
+}
+.whoisameca p{
+	color: rgb(0, 0, 0);
+	margin: 10px 0 40px;
+	font-size: 20px;
+	padding: 20px;	
+}
+.whoisameca h1{
+	color: rgb(0, 0, 0);
+	font-size: 40px; 
+	text-align:"right";
+	padding-top: 110px;
+}
+.whoisameca ul{
+	color: rgb(0, 0, 0);
+}
+
+/* End*/
+.end{
+	min-height: 0vh;
+	width: 100%;
+	background-color: rgb(34, 34, 34);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.end p
+{
+	color: white;
+	
+}
+
+.end h3
+{
+	padding-top: 90px;
+	color: white;
+}

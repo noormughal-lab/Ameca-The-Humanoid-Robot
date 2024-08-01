@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(images/banner3.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 150px;
+}
+.nav-links{
+	flex: 1;
+	padding-right: 250px;
+	text-align: center;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #3388FF;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 62px;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 1px solid #006aff;
+	background: #006aff;
+	transition: 1s;
+}
+nav .fa{
+	display: none;
+}
+
+/*About*/
+
+.about{
+	min-height: 75vh;
+	width: 100%;
+	background-color: rgb(243, 243, 243);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.about h3{
+	font-size: 30px; 
+	text-align:"right" ;
+	padding-top: 110px;
+}
+.about p{
+	color: rgb(0, 0, 0);
+	margin: 10px 0 40px;
+	font-size: 20px;
+	padding: 20px;	
+}
+.about h1{
+	color: rgb(0, 0, 0);
+	font-size: 40px; 
+	text-align:"right";
+	padding-top: 110px;
+}
+.about ul{
+	color: rgb(0, 0, 0);
+}
+
+/* About 2*/
+
+.about2{
+	min-height: 70vh;
+	width: 100%;
+	background-color: rgb(34, 34, 34);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.about2 h3{
+	font-size: 30px; 
+	text-align:"right" ;
+	padding-top: 110px;
+}
+.about2 p{
+	color: white;
+	margin: 10px 0 40px;
+	font-size: 20px;
+	padding: 20px;	
+}
+.about2 h1{
+	color: white;
+	font-size: 40px; 
+	text-align:"right";
+	padding-top: 110px;
+}
+.about2 ul{
+	color: white;
+}
+
+
+
+/* End*/
+.end{
+	min-height: 0vh;
+	width: 100%;
+	background-color: rgb(34, 34, 34);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.end p
+{
+	color: white;
+	padding-top: 30px;
+}
+
+.end h3
+{
+	text-align: center;
+	padding-top: 90px;
+	color: white;
+}
